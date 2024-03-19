@@ -40,6 +40,7 @@
 		E290AD332BA9E86A00B15519 = {
 			isa = PBXGroup;
 			children = (
+				E290AD532BA9EBC200B15519 /* README.md */,
 				E290AD3E2BA9E86A00B15519 /* TeamFinder */,
 				E290AD3D2BA9E86A00B15519 /* Products */,
 			);
@@ -62,7 +63,6 @@
 				E290AD482BA9E86C00B15519 /* Assets.xcassets */,
 				E290AD4A2BA9E86C00B15519 /* LaunchScreen.storyboard */,
 				E290AD4D2BA9E86C00B15519 /* Info.plist */,
-				E290AD532BA9EBC200B15519 /* README.md */,
 			);
 			path = TeamFinder;
 			sourceTree = "<group>";
