@@ -51,12 +51,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9743BC72BAB51C200D4CEF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E290AD332BA9E86A00B15519 = {
 			isa = PBXGroup;
 			children = (
 				E290AD532BA9EBC200B15519 /* README.md */,
 				E290AD3E2BA9E86A00B15519 /* TeamFinder */,
 				E290AD3D2BA9E86A00B15519 /* Products */,
+				C9743BC72BAB51C200D4CEF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +103,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9743BC62BAB517300D4CEF8 /* PBXTargetDependency */,
 			);
 			name = TeamFinder;
 			packageProductDependencies = (
@@ -138,6 +147,7 @@
 				E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */,
 				E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */,
 				E290AD6F2BAA9F4100B15519 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C9743BC22BAB511700D4CEF8 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = E290AD3D2BA9E86A00B15519 /* Products */;
 			projectDirPath = "";
@@ -173,6 +183,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9743BC62BAB517300D4CEF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = C9743BC52BAB517300D4CEF8 /* SwiftLintPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E290AD4A2BA9E86C00B15519 /* LaunchScreen.storyboard */ = {
@@ -391,6 +408,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C9743BC22BAB511700D4CEF8 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
 		E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -418,6 +443,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C9743BC52BAB517300D4CEF8 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9743BC22BAB511700D4CEF8 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
 		E290AD562BAA9CF800B15519 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
