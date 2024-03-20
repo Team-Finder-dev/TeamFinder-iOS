@@ -17,6 +17,8 @@
 		E290AD592BAA9CF800B15519 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD582BAA9CF800B15519 /* Moya */; };
 		E290AD5B2BAA9CF800B15519 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5A2BAA9CF800B15519 /* ReactiveMoya */; };
 		E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5C2BAA9CF800B15519 /* RxMoya */; };
+		E290AD602BAA9D4A00B15519 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5F2BAA9D4A00B15519 /* Swinject */; };
+		E290AD622BAA9D4A00B15519 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E290AD592BAA9CF800B15519 /* Moya in Frameworks */,
+				E290AD602BAA9D4A00B15519 /* Swinject in Frameworks */,
 				E290AD572BAA9CF800B15519 /* CombineMoya in Frameworks */,
+				E290AD622BAA9D4A00B15519 /* Swinject-Dynamic in Frameworks */,
 				E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */,
 				E290AD5B2BAA9CF800B15519 /* ReactiveMoya in Frameworks */,
 			);
@@ -96,6 +100,8 @@
 				E290AD582BAA9CF800B15519 /* Moya */,
 				E290AD5A2BAA9CF800B15519 /* ReactiveMoya */,
 				E290AD5C2BAA9CF800B15519 /* RxMoya */,
+				E290AD5F2BAA9D4A00B15519 /* Swinject */,
+				E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */,
 			);
 			productName = TeamFinder;
 			productReference = E290AD3C2BA9E86A00B15519 /* TeamFinder.app */;
@@ -127,6 +133,7 @@
 			mainGroup = E290AD332BA9E86A00B15519;
 			packageReferences = (
 				E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */,
+				E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = E290AD3D2BA9E86A00B15519 /* Products */;
 			projectDirPath = "";
@@ -388,6 +395,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -410,6 +425,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		E290AD5F2BAA9D4A00B15519 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
