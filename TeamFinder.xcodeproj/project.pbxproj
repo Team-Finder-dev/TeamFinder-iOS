@@ -19,6 +19,7 @@
 		E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5C2BAA9CF800B15519 /* RxMoya */; };
 		E290AD602BAA9D4A00B15519 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5F2BAA9D4A00B15519 /* Swinject */; };
 		E290AD622BAA9D4A00B15519 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */; };
+		E290AD712BAA9F4100B15519 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD702BAA9F4100B15519 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			files = (
 				E290AD592BAA9CF800B15519 /* Moya in Frameworks */,
 				E290AD602BAA9D4A00B15519 /* Swinject in Frameworks */,
+				E290AD712BAA9F4100B15519 /* Kingfisher in Frameworks */,
 				E290AD572BAA9CF800B15519 /* CombineMoya in Frameworks */,
 				E290AD622BAA9D4A00B15519 /* Swinject-Dynamic in Frameworks */,
 				E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */,
@@ -102,6 +104,7 @@
 				E290AD5C2BAA9CF800B15519 /* RxMoya */,
 				E290AD5F2BAA9D4A00B15519 /* Swinject */,
 				E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */,
+				E290AD702BAA9F4100B15519 /* Kingfisher */,
 			);
 			productName = TeamFinder;
 			productReference = E290AD3C2BA9E86A00B15519 /* TeamFinder.app */;
@@ -134,6 +137,7 @@
 			packageReferences = (
 				E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */,
 				E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */,
+				E290AD6F2BAA9F4100B15519 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E290AD3D2BA9E86A00B15519 /* Products */;
 			projectDirPath = "";
@@ -403,6 +407,14 @@
 				minimumVersion = 2.8.4;
 			};
 		};
+		E290AD6F2BAA9F4100B15519 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -435,6 +447,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = "Swinject-Dynamic";
+		};
+		E290AD702BAA9F4100B15519 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD6F2BAA9F4100B15519 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
