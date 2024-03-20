@@ -13,6 +13,10 @@
 		E290AD492BA9E86C00B15519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E290AD482BA9E86C00B15519 /* Assets.xcassets */; };
 		E290AD4C2BA9E86C00B15519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E290AD4A2BA9E86C00B15519 /* LaunchScreen.storyboard */; };
 		E290AD542BA9EBC200B15519 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E290AD532BA9EBC200B15519 /* README.md */; };
+		E290AD572BAA9CF800B15519 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD562BAA9CF800B15519 /* CombineMoya */; };
+		E290AD592BAA9CF800B15519 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD582BAA9CF800B15519 /* Moya */; };
+		E290AD5B2BAA9CF800B15519 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5A2BAA9CF800B15519 /* ReactiveMoya */; };
+		E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5C2BAA9CF800B15519 /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E290AD592BAA9CF800B15519 /* Moya in Frameworks */,
+				E290AD572BAA9CF800B15519 /* CombineMoya in Frameworks */,
+				E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */,
+				E290AD5B2BAA9CF800B15519 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,12 @@
 			dependencies = (
 			);
 			name = TeamFinder;
+			packageProductDependencies = (
+				E290AD562BAA9CF800B15519 /* CombineMoya */,
+				E290AD582BAA9CF800B15519 /* Moya */,
+				E290AD5A2BAA9CF800B15519 /* ReactiveMoya */,
+				E290AD5C2BAA9CF800B15519 /* RxMoya */,
+			);
 			productName = TeamFinder;
 			productReference = E290AD3C2BA9E86A00B15519 /* TeamFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = E290AD332BA9E86A00B15519;
+			packageReferences = (
+				E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = E290AD3D2BA9E86A00B15519 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +378,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E290AD562BAA9CF800B15519 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E290AD582BAA9CF800B15519 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E290AD5A2BAA9CF800B15519 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		E290AD5C2BAA9CF800B15519 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E290AD342BA9E86A00B15519 /* Project object */;
 }
