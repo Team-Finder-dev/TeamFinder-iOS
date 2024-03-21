@@ -39,14 +39,17 @@ bugfix/фамилия/TFN-1-что-сделал-кратко
 
 ## Функция, имеющая больше двух параметров переносится на новую строку
 
-**Пример:** <br>
+**Пример функции с двумя параметрами :** <br>
 func set(str: String, str: String) -> Int
 
-func set( <br>
-    str: String, <br>
-    str: String, <br>
-    str: String <br>
+**Пример функции с тремя и более параметрами :** <br>
+```
+func set(
+    str: String,
+    str: String,
+    str: String
 ) -> Int
+```
 
 ## Перенос скобок
 
