@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9D9586C2BABA898004B32C7 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = C9D9586B2BABA898004B32C7 /* swiftgen.yml */; };
+		C9D958732BABA9F8004B32C7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D958712BABA9F8004B32C7 /* Assets.swift */; };
+		C9D958742BABA9F8004B32C7 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D958722BABA9F8004B32C7 /* Strings.swift */; };
 		E290AD402BA9E86A00B15519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290AD3F2BA9E86A00B15519 /* AppDelegate.swift */; };
 		E290AD422BA9E86A00B15519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290AD412BA9E86A00B15519 /* SceneDelegate.swift */; };
 		E290AD442BA9E86A00B15519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E290AD432BA9E86A00B15519 /* ViewController.swift */; };
 		E290AD492BA9E86C00B15519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E290AD482BA9E86C00B15519 /* Assets.xcassets */; };
 		E290AD4C2BA9E86C00B15519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E290AD4A2BA9E86C00B15519 /* LaunchScreen.storyboard */; };
 		E290AD542BA9EBC200B15519 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E290AD532BA9EBC200B15519 /* README.md */; };
+		E290AD572BAA9CF800B15519 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD562BAA9CF800B15519 /* CombineMoya */; };
+		E290AD592BAA9CF800B15519 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD582BAA9CF800B15519 /* Moya */; };
+		E290AD5B2BAA9CF800B15519 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5A2BAA9CF800B15519 /* ReactiveMoya */; };
+		E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5C2BAA9CF800B15519 /* RxMoya */; };
+		E290AD602BAA9D4A00B15519 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD5F2BAA9D4A00B15519 /* Swinject */; };
+		E290AD622BAA9D4A00B15519 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */; };
+		E290AD712BAA9F4100B15519 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E290AD702BAA9F4100B15519 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9D9586B2BABA898004B32C7 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		C9D958712BABA9F8004B32C7 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C9D958722BABA9F8004B32C7 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E290AD3C2BA9E86A00B15519 /* TeamFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E290AD3F2BA9E86A00B15519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E290AD412BA9E86A00B15519 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,18 +44,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E290AD592BAA9CF800B15519 /* Moya in Frameworks */,
+				E290AD602BAA9D4A00B15519 /* Swinject in Frameworks */,
+				E290AD712BAA9F4100B15519 /* Kingfisher in Frameworks */,
+				E290AD572BAA9CF800B15519 /* CombineMoya in Frameworks */,
+				E290AD622BAA9D4A00B15519 /* Swinject-Dynamic in Frameworks */,
+				E290AD5D2BAA9CF800B15519 /* RxMoya in Frameworks */,
+				E290AD5B2BAA9CF800B15519 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9743BC72BAB51C200D4CEF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9D958682BABA727004B32C7 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				C9D958712BABA9F8004B32C7 /* Assets.swift */,
+				C9D958722BABA9F8004B32C7 /* Strings.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		E290AD332BA9E86A00B15519 = {
 			isa = PBXGroup;
 			children = (
+				C9D9586B2BABA898004B32C7 /* swiftgen.yml */,
 				E290AD532BA9EBC200B15519 /* README.md */,
 				E290AD3E2BA9E86A00B15519 /* TeamFinder */,
 				E290AD3D2BA9E86A00B15519 /* Products */,
+				C9743BC72BAB51C200D4CEF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +95,7 @@
 		E290AD3E2BA9E86A00B15519 /* TeamFinder */ = {
 			isa = PBXGroup;
 			children = (
+				C9D958682BABA727004B32C7 /* SwiftGen */,
 				E290AD3F2BA9E86A00B15519 /* AppDelegate.swift */,
 				E290AD412BA9E86A00B15519 /* SceneDelegate.swift */,
 				E290AD432BA9E86A00B15519 /* ViewController.swift */,
@@ -77,12 +116,23 @@
 				E290AD382BA9E86A00B15519 /* Sources */,
 				E290AD392BA9E86A00B15519 /* Frameworks */,
 				E290AD3A2BA9E86A00B15519 /* Resources */,
+				C9D958652BAB9D1A004B32C7 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C9743BC62BAB517300D4CEF8 /* PBXTargetDependency */,
 			);
 			name = TeamFinder;
+			packageProductDependencies = (
+				E290AD562BAA9CF800B15519 /* CombineMoya */,
+				E290AD582BAA9CF800B15519 /* Moya */,
+				E290AD5A2BAA9CF800B15519 /* ReactiveMoya */,
+				E290AD5C2BAA9CF800B15519 /* RxMoya */,
+				E290AD5F2BAA9D4A00B15519 /* Swinject */,
+				E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */,
+				E290AD702BAA9F4100B15519 /* Kingfisher */,
+			);
 			productName = TeamFinder;
 			productReference = E290AD3C2BA9E86A00B15519 /* TeamFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,12 @@
 				Base,
 			);
 			mainGroup = E290AD332BA9E86A00B15519;
+			packageReferences = (
+				E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */,
+				E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */,
+				E290AD6F2BAA9F4100B15519 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C9743BC22BAB511700D4CEF8 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = E290AD3D2BA9E86A00B15519 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,10 +184,31 @@
 				E290AD542BA9EBC200B15519 /* README.md in Resources */,
 				E290AD4C2BA9E86C00B15519 /* LaunchScreen.storyboard in Resources */,
 				E290AD492BA9E86C00B15519 /* Assets.xcassets in Resources */,
+				C9D9586C2BABA898004B32C7 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9D958652BAB9D1A004B32C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen\nelse\n    echo \"warning: SwiftGen not installed, download from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E290AD382BA9E86A00B15519 /* Sources */ = {
@@ -140,11 +217,20 @@
 			files = (
 				E290AD442BA9E86A00B15519 /* ViewController.swift in Sources */,
 				E290AD402BA9E86A00B15519 /* AppDelegate.swift in Sources */,
+				C9D958742BABA9F8004B32C7 /* Strings.swift in Sources */,
+				C9D958732BABA9F8004B32C7 /* Assets.swift in Sources */,
 				E290AD422BA9E86A00B15519 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9743BC62BAB517300D4CEF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = C9743BC52BAB517300D4CEF8 /* SwiftLintPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E290AD4A2BA9E86C00B15519 /* LaunchScreen.storyboard */ = {
@@ -285,6 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G2Z3KJVPLW;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TeamFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,6 +389,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -316,6 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G2Z3KJVPLW;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TeamFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +422,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -361,6 +451,84 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9743BC22BAB511700D4CEF8 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+		E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		E290AD6F2BAA9F4100B15519 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9743BC52BAB517300D4CEF8 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9743BC22BAB511700D4CEF8 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+		E290AD562BAA9CF800B15519 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E290AD582BAA9CF800B15519 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E290AD5A2BAA9CF800B15519 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		E290AD5C2BAA9CF800B15519 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD552BAA9CF800B15519 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		E290AD5F2BAA9D4A00B15519 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		E290AD612BAA9D4A00B15519 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD5E2BAA9D4A00B15519 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+		E290AD702BAA9F4100B15519 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E290AD6F2BAA9F4100B15519 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E290AD342BA9E86A00B15519 /* Project object */;
 }
