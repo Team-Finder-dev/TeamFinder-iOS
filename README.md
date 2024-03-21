@@ -75,11 +75,13 @@ set2
 class A {
 
 func set() {}
+
 }
 
 extension A {
 
 func set() {}
+
 }
 
 struct A {
@@ -88,12 +90,13 @@ func set() {}
 
 Все константы выносятся в отдельный enum.
 
-**Пример**
+**Пример:**
 class A {
 
 enum Constants {
     static let num = 1
 }
+
 }
 
 ## Разделение по MARK
@@ -109,8 +112,10 @@ enum Constants {
 
 **Пример:**
 class A {
+
 // MARK: - Constants
 // MARK: - Initializers
+
 }
 
 ## Комментарии
