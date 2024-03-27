@@ -10,7 +10,7 @@ final class CustomHorizontalProgressView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = Asset.loaderBackgroundColor.color
+        backgroundColor = Asset.loaderBackgroundColor.color
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -23,12 +23,12 @@ final class CustomHorizontalProgressView: UIView {
     }
 
     private func setProgress() {
-        var progress = self.progress
+        var progress = progress
         progress = progress > 1.0 ? progress / 100 : progress
 
-        self.layer.cornerRadius = bounds.height / 2.0
-        self.layer.borderColor = Asset.loaderBorderColor.color.cgColor
-        self.layer.borderWidth = 3.0
+        layer.cornerRadius = bounds.height / 2.0
+        layer.borderColor = Asset.loaderBorderColor.color.cgColor
+        layer.borderWidth = 3.0
 
         let margin: CGFloat = 6.0
         var width = (bounds.width - margin)  * progress
@@ -38,14 +38,15 @@ final class CustomHorizontalProgressView: UIView {
             width = height
         }
 
-        let pathRef = UIBezierPath(roundedRect:
-                                    CGRect(
-                                        x: margin / 2.0,
-                                        y: margin / 2.0,
-                                        width: width,
-                                        height: height
-                                    ),
-                                   cornerRadius: height / 2.0
+        let pathRef = UIBezierPath(
+            roundedRect:
+                CGRect(
+                    x: margin / 2.0,
+                    y: margin / 2.0,
+                    width: width,
+                    height: height
+                ),
+            cornerRadius: height / 2.0
         )
         
         let maskLayer = CAShapeLayer()
@@ -61,5 +62,4 @@ final class CustomHorizontalProgressView: UIView {
         gradientLayer.mask = maskLayer
         layer.addSublayer(gradientLayer)
     }
-    
 }
