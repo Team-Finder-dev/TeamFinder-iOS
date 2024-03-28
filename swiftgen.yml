@@ -69,3 +69,15 @@ strings:
     outputs:
         - templateName: structured-swift5
           output: TeamFinder/SwiftGen/Strings.swift
+
+fonts:
+  inputs:
+    - TeamFinder/Fonts/SF-Pro.ttf
+    - TeamFinder/Fonts/SF-Pro-Rounded-Regular.otf
+    - TeamFinder/Fonts/SF-Pro-Text-Semibold.otf
+    - TeamFinder/Fonts/SF-Pro-Text-Medium.otf
+    - TeamFinder/Fonts/Inter-Medium.ttf
+    - TeamFinder/Fonts/Inter-Regular.ttf
+  outputs:
+    - templateName: swift5
+      output: TeamFinder/SwiftGen/Fonts.swift
