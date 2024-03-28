@@ -52,7 +52,7 @@ final class CustomHorizontalProgressView: UIView {
         let maskLayer = CAShapeLayer()
         maskLayer.path = pathRef.cgPath
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.bounds
+        gradientLayer.frame = bounds
         gradientLayer.colors = [
             Asset.loaderStartGradientColor.color.cgColor,
             Asset.loaderEndGradientColor.color.cgColor
